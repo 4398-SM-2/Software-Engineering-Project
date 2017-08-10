@@ -10,3 +10,6 @@ All software was developed via ssh connection to the pi, then uploaded to github
 a completed project, ready for user install, where Django, Apache2 and Python
 have already been set up. 
 
+The one issue that we were not able to resolve, is that when the user turns off the camer from the GUI, 
+then attempts to turn it back on, the web page displays an error message, but the script still succeeds 
+at turning the camera back on, therefore functionaly, the button works.
