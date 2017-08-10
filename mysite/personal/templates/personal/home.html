@@ -1,0 +1,24 @@
+{% extends "personal/index.html" %}
+
+{% block content%}
+	<div class="text-strip" class="green">
+		<div class="wrapper">
+			<br><br>
+			 <a href="{% url 'TurnOff' %}" class="btn">Turn off Pi-Cam</a>
+			 <div>
+			 <a href="{% url 'TurnOn' %}" class="btn">Turn on Pi-Cam</a>
+			 </div>
+			 <div>
+			 <a href="{% url 'snapshot' %}" class="btn">Take Snapshot!</a>
+			 </div>
+		</div>
+	</div>
+	<div class="project-strip">
+		<div class="wrapper">
+		 <blockquote>PiCam Live Feed:</blockquote>
+		<iframe width="560" height="315" src="https://www.youtube.com/embed/live_stream?channel=UCn21tR8vf_vEB5KkBSNtEwg&autoplay=1"
+		frameborder="0" allowfullscreen></iframe>
+		</div>
+		<p><a href="https://github.com/4398-SM-2/Software-Engineering-Project"><font color = "purple">Check out our GitHub</font></a></p>
+	</div>
+{% endblock %}

@@ -1,0 +1,12 @@
+d# -*- coding: utf-8 -*-
+from __future__ import unicode_literals
+
+from django.shortcuts import render
+
+# Create your views here.
+def TurnOff(request):
+   import os
+
+   os.system("pkill -f views.py")
+
+   return render (request, 'personal/home.html')
